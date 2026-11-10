@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TDHC | Come as you are</title>
+  <meta name="description" content="Grace Chapel is a welcoming church family. Join us for Sunday worship, midweek Bible study and community life." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Grace Chapel home">
+        <svg class="brand-cross" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M10 2h4v7h7v4h-7v9h-4v-9H3V9h7z" fill="currentColor" />
+        </svg>
+        <span>The Divine Healers Church</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#ministries">Ministries</a>
+        <a href="#events">Events</a>
+        <a href="#give">Give</a>
+        <a href="#members" class="nav-members" id="nav-members" hidden>Members</a>
+        <div class="auth-nav" id="auth-nav-guest">
+          <button type="button" class="nav-link-btn" data-auth-open="login">Log in</button>
+          <button type="button" class="nav-cta" data-auth-open="signup">Sign up</button>
+        </div>
+        <div class="user-area" id="auth-nav-user" hidden>
+          <span class="user-name" id="user-name"></span>
+          <button type="button" class="nav-cta" id="btn-logout">Log out</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Come as you are.<br />Stay as family.</h1>
+          <p class="lead">
+            The Divine Healers Church is a church for people at every stage of faith. Join us on Sunday, bring a friend,
+            and find a seat that has been kept for you.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-white">Plan your visit</a>
+            <a href="#message" class="btn btn-outline">Watch the latest message</a>
+          </div>
+        </div>
+
+        <div class="arch" id="services" role="group" aria-label="Service times">
+          <svg class="arch-cross" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M10 2h4v7h7v4h-7v9h-4v-9H3V9h7z" fill="currentColor" />
+          </svg>
+          <h2>Join us this week</h2>
+          <ul class="times">
+            <li><span class="time">8:00 AM</span><span>Sunday, first service</span></li>
+            <li><span class="time">10:30 AM</span><span>Sunday, second service</span></li>
+            <li><span class="time">6:00 PM</span><span>Wednesday, Bible study</span></li>
+            <li><span class="time">5:30 AM</span><span>Friday, prayer hour</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMBERS (visible only when signed in) -->
+    <section class="section section-tint" id="members" hidden>
+      <div class="container">
+        <h2 class="section-title">Welcome home, <span id="members-name">friend</span>.</h2>
+        <p class="section-intro">Your member space for prayer, notes and church life.</p>
+        <div class="member-grid">
+          <article class="member-card">
+            <h3>Prayer requests</h3>
+            <p>Share a need with the prayer team. We pray over every request on Friday mornings.</p>
+            <a href="#contact" class="text-link">Send a request</a>
+          </article>
+          <article class="member-card">
+            <h3>Sermon notes</h3>
+            <p>Follow along with the outline and Scripture readings from this week's message.</p>
+            <a href="#message" class="text-link">Open the latest notes</a>
+          </article>
+          <article class="member-card">
+            <h3>Small groups</h3>
+            <p>Meet during the week in a home group near you, for study, prayer and food.</p>
+            <a href="#ministries" class="text-link">Find a group</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section-white" id="about">
+      <div class="container about-grid">
+        <div>
+          <h2 class="section-title">A house of prayer, and a home for the people in it.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            We are a community of believers who gather to worship, learn the Scriptures and serve our
+            neighbours. Some of us have been here for decades, and some walked in for the first time last
+            month. Everyone is welcome at the same table.
+          </p>
+          <p>
+            Our doors are open to families, students, workers and anyone searching. You will find
+            honest teaching, joyful singing and people who will learn your name.
+          </p>
+          <blockquote class="verse">
+            I was glad when they said unto me, Let us go into the house of the Lord.
+            <cite>Psalm 122:1</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- MINISTRIES -->
+    <section class="section section-wine" id="ministries">
+      <div class="container">
+        <h2 class="section-title">Find your place to serve and grow</h2>
+        <p class="section-intro">Every ministry meets on a regular schedule and welcomes new members.</p>
+
+        <div class="ministry-grid">
+          <article class="ministry">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-4 3-6.5 7-6.5s7 2.5 7 6.5"/></svg>
+            <h3>Children</h3>
+            <p>Bible stories, songs and games for ages 3 to 12 during both Sunday services.</p>
+          </article>
+          <article class="ministry">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.4 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg>
+            <h3>Youth</h3>
+            <p>A space for teenagers and young adults to ask real questions and build lasting friendships.</p>
+          </article>
+          <article class="ministry">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+            <h3>Women</h3>
+            <p>Monthly fellowship, mentoring and prayer for women of every season of life.</p>
+          </article>
+          <article class="ministry">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10l8-6 8 6v10"/><path d="M9 20v-6h6v6"/></svg>
+            <h3>Men</h3>
+            <p>Saturday morning breakfast, Scripture study and service projects around the community.</p>
+          </article>
+          <article class="ministry">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></svg>
+            <h3>Choir and music</h3>
+            <p>Rehearsals every Thursday evening. Singers and instrumentalists are always needed.</p>
+          </article>
+          <article class="ministry">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
+            <h3>Outreach</h3>
+            <p>Food drives, school support and visits to the sick, led by volunteers each month.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="section section-white" id="events">
+      <div class="container events-grid">
+        <div>
+          <h2 class="section-title">What is coming up</h2>
+          <p class="section-intro">Mark your calendar and invite someone along.</p>
+        </div>
+
+        <ul class="event-list">
+          <li class="event">
+            <div class="date"><strong>14</strong><span>Nov</span></div>
+            <div class="event-body">
+              <h3>Thanksgiving Service</h3>
+              <p>Sunday, 10:30 AM in the main sanctuary. A shared meal follows.</p>
+            </div>
+          </li>
+          <li class="event">
+            <div class="date"><strong>21</strong><span>Nov</span></div>
+            <div class="event-body">
+              <h3>Youth Conference</h3>
+              <p>Saturday, 9:00 AM to 4:00 PM. Free entry, lunch provided.</p>
+            </div>
+          </li>
+          <li class="event">
+            <div class="date"><strong>05</strong><span>Dec</span></div>
+            <div class="event-body">
+              <h3>Community Food Drive</h3>
+              <p>Saturday, 8:00 AM. Bring non-perishable items or volunteer to pack.</p>
+            </div>
+          </li>
+          <li class="event">
+            <div class="date"><strong>20</strong><span>Dec</span></div>
+            <div class="event-body">
+              <h3>Carols and Candlelight</h3>
+              <p>Sunday, 6:00 PM. An evening of music for the whole family.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- LATEST MESSAGE -->
+    <section class="section section-wine" id="message">
+      <div class="container message-grid">
+        <div class="message-card" aria-label="Latest sermon">
+          <button class="play" aria-label="Play the latest message" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+          </button>
+          <p class="message-meta">Sunday, 31 October</p>
+          <h3>Faith that walks through the storm</h3>
+          <p>Pastor Daniel Mensah</p>
+        </div>
+        <div>
+          <h2 class="section-title">Missed Sunday? Catch up at home.</h2>
+          <p class="section-intro">
+            Every sermon is recorded and shared within a day. Listen on your phone, watch with your
+            family or share a message with a friend who needs encouragement.
+          </p>
+          <a href="#contact" class="btn btn-white">Get messages by WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GIVE -->
+    <section class="section section-white" id="give">
+      <div class="container give-grid">
+        <div>
+          <h2 class="section-title">Give with a glad heart</h2>
+          <p class="section-intro">
+            Your tithes and offerings keep our doors open, support families in need and fund the work of
+            the gospel in our region.
+          </p>
+        </div>
+        <div class="give-panel">
+          <h3>Ways to give</h3>
+          <dl>
+            <div><dt>Mobile money</dt><dd>024 000 0000, Grace Chapel</dd></div>
+            <div><dt>Bank transfer</dt><dd>Account 000 000 0000, Example Bank</dd></div>
+            <div><dt>In person</dt><dd>During any Sunday service</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-wine" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="section-title">We saved you a seat</h2>
+          <p class="section-intro">
+            Tell us you are coming and we will have someone greet you at the door.
+          </p>
+          <ul class="contact-details">
+            <li><strong>Address</strong><span>12 Church Street, Your City</span></li>
+            <li><strong>Phone</strong><span>+233 24 000 0000</span></li>
+            <li><strong>Email</strong><span>hello@gracechapel.example</span></li>
+          </ul>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+            <small class="error" id="name-error"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+            <small class="error" id="email-error"></small>
+          </div>
+          <div class="field">
+            <label for="message-text">Message</label>
+            <textarea id="message-text" name="message" rows="4" required></textarea>
+            <small class="error" id="message-error"></small>
+          </div>
+          <button type="submit" class="btn btn-white">Send message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Grace Chapel. All rights reserved.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <!-- AUTH MODAL -->
+  <div class="modal" id="auth-modal" hidden>
+    <div class="modal-backdrop" data-auth-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+      <button class="modal-close" type="button" aria-label="Close" data-auth-close>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+      </button>
+
+      <div class="auth-tabs" role="tablist" aria-label="Account">
+        <button type="button" role="tab" id="tab-login" aria-selected="true" aria-controls="panel-login" data-tab="login">Log in</button>
+        <button type="button" role="tab" id="tab-signup" aria-selected="false" aria-controls="panel-signup" data-tab="signup" tabindex="-1">Sign up</button>
+      </div>
+
+      <h2 id="auth-title">Welcome back</h2>
+      <p class="auth-sub" id="auth-sub">Log in to reach member pages and prayer requests.</p>
+
+      <p class="auth-banner" id="auth-banner" hidden></p>
+
+      <div class="social">
+        <button type="button" class="social-btn" data-provider="google">
+          <span class="social-icon" aria-hidden="true">G</span>Continue with Google
+        </button>
+        <button type="button" class="social-btn" data-provider="facebook">
+          <span class="social-icon" aria-hidden="true">f</span>Continue with Facebook
+        </button>
+      </div>
+
+      <div class="divider"><span>or use your email</span></div>
+
+      <!-- LOG IN -->
+      <form id="panel-login" role="tabpanel" aria-labelledby="tab-login" novalidate>
+        <div class="field">
+          <label for="login-email">Email address</label>
+          <input id="login-email" type="email" autocomplete="email" required />
+          <small class="error" id="login-email-error"></small>
+        </div>
+        <div class="field">
+          <label for="login-password">Password</label>
+          <div class="password-wrap">
+            <input id="login-password" type="password" autocomplete="current-password" required />
+            <button type="button" class="pw-toggle" data-toggle="login-password" aria-label="Show password">Show</button>
+          </div>
+          <small class="error" id="login-password-error"></small>
+        </div>
+        <div class="auth-row">
+          <button type="button" class="text-btn" id="forgot-btn">Forgot your password?</button>
+        </div>
+        <button type="submit" class="btn btn-wine btn-block">Log in</button>
+      </form>
+
+      <!-- SIGN UP -->
+      <form id="panel-signup" role="tabpanel" aria-labelledby="tab-signup" novalidate hidden>
+        <div class="field">
+          <label for="signup-name">Full name</label>
+          <input id="signup-name" type="text" autocomplete="name" required />
+          <small class="error" id="signup-name-error"></small>
+        </div>
+        <div class="field">
+          <label for="signup-email">Email address</label>
+          <input id="signup-email" type="email" autocomplete="email" required />
+          <small class="error" id="signup-email-error"></small>
+        </div>
+        <div class="field">
+          <label for="signup-password">Password</label>
+          <div class="password-wrap">
+            <input id="signup-password" type="password" autocomplete="new-password" required />
+            <button type="button" class="pw-toggle" data-toggle="signup-password" aria-label="Show password">Show</button>
+          </div>
+          <small class="error" id="signup-password-error"></small>
+        </div>
+        <div class="field">
+          <label for="signup-confirm">Confirm password</label>
+          <input id="signup-confirm" type="password" autocomplete="new-password" required />
+          <small class="error" id="signup-confirm-error"></small>
+        </div>
+        <button type="submit" class="btn btn-wine btn-block">Create account</button>
+      </form>
+
+      <p class="auth-status" id="auth-status" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <script src="fire.js"></script>
+  <script src="index.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>
